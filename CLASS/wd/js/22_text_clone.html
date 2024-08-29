@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="nm" onkeypress="clone()"> -->
+    <input type="text" id="nm" onkeyup="clone()">
+
+    <textarea name="" id="texta" cols="30" rows="5"></textarea>
+    <br>
+    <button onclick="clone()">click me</button>
+
+
+    <script>
+
+        var input_tag = document.getElementById("nm")
+        var texta = document.getElementById("texta")
+        console.log(input_tag.value)
+        console.log(texta)
+        console.log(input_tag)
+
+        function clone(){
+            texta.innerText = input_tag.value;
+        }
+
+
+    </script>
+</body>
+</html>

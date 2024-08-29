@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" align="center">
+        <div>
+            <input type="text" onblur="return validate(nm,nmer)" placeholder="Enter your name" name="" id="nm">
+            <span id="nmer"></span>
+        </div>
+        <div>
+            <input type="tel" onblur="return validate(ph,pher)" placeholder="Enter your Phone" name="" id="ph">
+            <span id="pher"></span>
+        </div>
+        <div>
+            <input type="password"  onblur="return validate(psd,psder)" placeholder="Enter your password" name="" id="psd">
+            <span id="psder"></span>
+        </div>
+        <div>
+            <input type="password" placeholder="Enter your Cpassword" name="" id="cpsd">
+            <span id="cpsder"></span>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+
+    <script>
+        function validate(iup,er){
+            if(iup.value == ""){
+                er.innerHTML = "pls required...!";
+                er.style.color = "red"
+                iup.style.border = "2px solid red";
+                return false
+            }
+            else{
+                er.innerHTML = "";
+                iup.style.border = "2px solid green";
+            }
+        }
+    </script>
+</body>
+</html>

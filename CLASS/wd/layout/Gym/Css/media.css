@@ -1,0 +1,117 @@
+@media only screen and (max-width:1160px) {
+    
+}
+
+@media only screen and (max-width:992px) {
+    .container{
+        /* display: none; */
+        width: 100%;
+        padding: 0 20px;
+    }
+    header{
+        background-size: cover;
+    } 
+    .sec4 .back
+    {
+        background-size: cover;
+    }
+    .nav-li a
+    {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .nav-ul{
+        display: none;
+    }
+    .logo-icon .bar{
+        display: block;
+    }
+    .logo-icon .search{
+        display: none;
+    }
+    .header-main .header-p{
+        width: 70%;
+    }
+    .sec1-text .para-text{
+        width: 90%;
+    }
+    .card-sec .row{
+        display: block;
+    }
+    .card-sec .row .col {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .sec2 .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec2 .row .col {
+        
+        width: 65%;
+        margin: 0 auto;
+    }
+    .sec2-text .sec2-h2 {
+    text-align: center;
+    }
+    
+    .sec2-text .sec2-p {
+        width: 100%;
+
+        text-align: center;
+
+    }
+    .button {
+        align-items: center;
+        margin-left:50px;
+        }
+    .sec2 .wrapper .row{
+        flex-direction: column-reverse;
+    }
+    .sec3 .row {
+   display: block;
+ 
+ 
+    }
+    .footer .row {
+        display: block;
+        
+    }
+    .footer .row .col-4 {
+        margin: 0 auto;  
+    }.footer .row .col-6 {
+        margin: 0 auto;  
+    }
+    .footer .row .col {
+        margin: 0 auto;  
+    }
+    .footer .col-4 p{
+        width: 100%;
+    }
+    
+
+    
+}
+
+
+@media only screen and (max-width:576px) {
+    .card-sec .row .col {
+        width: 90%;
+    }
+    .header{
+        background:url("../Images/header-img.png");
+        background-size: 100% 100%; 
+        max-width: 100%;
+        height: auto;
+    }
+    .sec4 .back{
+        background: url("../Images/header-img.png");
+        background-size: 100% 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral;
+            border: 2px solid;
+            position: absolute;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+sdfgsdgsdg
+    </div>
+
+    <button class="btn">click</button>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".main").animate({
+                    width:'300px',
+                    opacity:'0.5',
+                    fontSize:"30px",
+                    left:"250px"
+                },1000)
+                $(".main").animate({
+                       height:'300px'
+                },1000)
+                $(".main").animate({
+                    width:'200px',
+                },1000)
+                $(".main").animate({
+                    height:'200px',
+                },1000)
+            })
+        })
+    </script>
+</body>
+</html>

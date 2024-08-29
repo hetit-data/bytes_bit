@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" onsubmit="return validate()">
+        <div>
+            <input type="text" placeholder="Enter your name" name="" id="nm">
+            <span id="nmer"></span>
+        </div>
+        <div>
+            <input type="tel" placeholder="Enter your Phone" name="" id="ph">
+            <span id="pher"></span>
+        </div>
+        <div>
+            <input type="password" placeholder="Enter your password" name="" id="psd">
+            <span id="psder"></span>
+        </div>
+        <div>
+            <input type="password" placeholder="Enter your Cpassword" name="" id="cpsd">
+            <span id="cpsder"></span>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+
+    <script>
+        name_tag = document.getElementById("nm")
+        nmerror = document.getElementById("nmer")
+        phone_tag = document.getElementById("ph")
+        pherror = document.getElementById("pher")
+        password_tag = document.getElementById("psd")
+        psderror = document.getElementById("psder")
+        Cpassword_tag = document.getElementById("cpsd")
+        cpsderror = document.getElementById("cpsder")
+        // console.log(name_tag)
+        // console.log(nmerror)
+
+
+        function validate(){
+            if(name_tag.value == "" || name_tag.value == null)
+            {
+                nmerror.innerHTML = "pls name Required..!";
+                nmerror.style.color ="red";
+                return false;
+            }
+            else{
+                nmerror.innerHTML = "";
+            }
+            if(phone_tag.value == "" || phone_tag.value == null){
+                pherror.innerHTML = "pls Phone number Required..!";
+                pherror.style.color ="red";
+                return false
+            }
+            else{
+                pherror.innerHTML = "";
+            }
+            if(password_tag.value == "" || password_tag.value == null){
+                psderror.innerHTML = "pls password Required..!";
+                psderror.style.color ="red";
+                return false
+            }
+            else{
+                psderror.innerHTML = "";
+            }
+            if(password_tag.value != Cpassword_tag.value){
+                alert("Password does not match..!")
+                // cpsderror.innerHTML = "Password does not match..!"
+                // cpsderror.style.color ="red";
+                // return false;
+            }
+            else{
+                cpsderror.innerHTML = ""
+            }
+        }
+
+    </script>
+</body>
+
+</html>

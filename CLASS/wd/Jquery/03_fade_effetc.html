@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .main{
+            background-color: lightcoral;
+            padding: 20px;
+            /* display: none; */
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="main">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur accusamus error animi eligendi blanditiis
+        maiores consequatur! Maiores excepturi perspiciatis tempore dicta fuga accusamus explicabo animi fugiat hic
+        adipisci, molestiae nam.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias et
+        suscipit laborum voluptatibus hic nam nihil magni consequatur, ea sunt omnis minus repellat veritatis illo
+        nostrum porro sint illum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ut at corrupti
+        dignissimos dolorem iure provident quaerat error consequuntur tenetur odit, nihil quia praesentium explicabo
+        assumenda cum optio expedita? Excepturi?
+    </div>
+    <button id="btn">Fade in</button>
+    <button id="btn2">Fade out</button>
+    <button id="btn3">Fade toogle</button>
+    <button id="btn4">FadeTo</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $(".main").fadeIn(1000)
+            })
+            $("#btn2").click(function(){
+                $(".main").fadeOut("slow")
+            })
+            $("#btn3").click(function(){
+                $(".main").fadeToggle(1000)
+            })
+            $("#btn4").click(function(){
+                $(".main").fadeTo(1000,0.5)
+            })
+        })
+    </script>
+</body>
+
+</html>

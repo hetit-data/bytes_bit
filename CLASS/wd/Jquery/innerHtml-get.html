@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 >Hedaling 2</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusantium omnis eum, voluptatem aperiam unde
+        doloremque quaerat non tempora tenetur doloribus dolore dicta illo, magnam fugit porro est perspiciatis
+        perferendis!</p>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo deleniti aliquam ipsum ad! Deleniti, eaque? Fugit
+        aliquid itaque dignissimos? Omnis deserunt consequatur sint aut assumenda ducimus, cupiditate reiciendis
+        architecto dolore?</div>
+
+    name :<input type="text" name="" id="name" value="">
+
+    <img  src="https://th.bing.com/th/id/OIP.5_9740L6PFHPWlPVTIYLDgHaE2?w=291&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" id="img">
+    <br>
+
+    <button id="b1">alert 1</button>
+    <button id="b2">alert 2</button>
+    <button id="b3">alert 3</button>
+    <button id="b4">alert 4</button>
+        <script>
+
+
+            // text :- innerText :- text 
+            // html :- innerHTML :- tag text
+            // val :- value 
+            // attr :- src 
+
+            $("#b1").click(function(){
+                // innerTExt
+                alert($('h1').text())
+            })
+            $("#b2").click(function(){
+                // .innerhtml 
+                alert($('p').html())
+            })
+            $("#b3").click(function(){
+                // value
+                alert($("#name").val())
+            })
+            $("#b4").click(function(){
+                alert($("img").attr('src'))
+            })
+
+
+
+          
+
+
+
+        </script>
+</body>
+
+</html>

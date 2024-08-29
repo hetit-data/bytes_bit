@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <!-- ?= string 
+        .* compulsory -->
+        <!-- form tag needed to submit form  -->
+         <input type="password" pattern="(?=.*[!@#$%^&*])[0-9a-zA-Z!@#$%^&*]{5,}" title="one special character" required>
+         <input type="number" max="70"   min="0">
+         <label for="start">Start date:</label>
+         <input type="date" id="start" name="start"
+                min="2000-01-01" max="2024-12-31">
+                <input type="text" readonly value="500">
+                <input type="text" name="" id="" disabled placeholder="hello" >
+                
+         
+<!-- {5,} min 5 length after , specific -->
+<input type="submit">
+
+
+        
+    </form>
+</body>
+</html>

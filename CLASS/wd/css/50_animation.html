@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: ex1 2s infinite; */
+            animation: identifier 5s infinite;
+        }
+        /* animation */
+        /* @keyframes ex1 {
+            from{background-color: red;border-radius: 50%};
+            to{background-color: aqua;};
+        } */
+
+        @keyframes identifier {
+            0%{background: blue}
+            20%{background: linear-gradient(red,green)}
+            40%{transform: scale(1.2)}
+            60%{transform: translate(100px,100px)}
+            80%{border-radius:50%;}
+            100%{background: lightcoral}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+    </div>
+</body>
+</html>

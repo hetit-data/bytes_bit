@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("h1, h2, p").addClass("blue");
+                $("div").removeClass("important");
+            });
+            $("#btn2").click(function(){
+                $("h4").toggleClass("toggle")
+            })
+        });
+    </script>
+    <style>
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+            background-color: lightcoral;
+            color: aqua;
+        }
+
+        .blue {
+            color: blue;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .toggle{
+            font-size: 70px;
+            background: linear-gradient(red,blue);
+            color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <h4>hello this h4 tag toogle class</h4>
+
+    <div class="important">This is some important text!</div><br>
+
+    <button id="btn">Add classes to elements</button>
+    <button id="btn2">h4 ath</button>
+
+</body>
+
+</html>

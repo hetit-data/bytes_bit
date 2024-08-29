@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1" onmouseenter="changetext()" onmouseleave="changetext2()">Hello js</h1>
+
+    <script>
+        var h1_tag = document.getElementById("h1")
+        console.log(h1_tag)
+
+
+        function changetext(){
+            h1_tag.innerText = "Hello JavaScript";
+            h1_tag.style.color = "red";
+        }
+        
+        function changetext2(){
+            h1_tag.innerText = "Hello js";
+            h1_tag.style.color = "black"
+        }
+    </script>
+
+</body>
+</html>

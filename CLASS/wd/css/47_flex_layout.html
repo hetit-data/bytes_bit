@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        nav{
+            background-color: lightcoral;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+        .nav li{
+            display: inline-block;
+        }
+        .sec1{
+            background-color: aqua;
+            display: flex;
+            width: 100%;
+        }
+        .first,.secound,.three,.four{
+            height: 400px;
+            width: 25%;
+            border: 2px solid;
+        }
+        .secound{
+            display: flex;
+            flex-direction: column;
+        }
+        .top,.bottom{
+            border: 2px solid red;
+            height: 50%;
+            width: 100%;
+        }
+        .three{
+            display: flex;
+            flex-direction: row;
+        }
+        .left,.right{
+            height: 100%;
+            width: 50%;
+            border: 2px solid green;
+        }
+        footer{
+            background-color: brown;
+            display: flex;
+        }
+        .col-40{
+            height: 300px;
+            width: 40%;
+            border: 2px solid gold;
+        }
+        .col-60{
+            height: 300px;
+            width: 60%;
+            border: 2px solid gold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">logo</div>
+            <ul class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">help</a></li>
+            </ul>
+            <div class="icon">search</div>
+        </nav>
+        <!-- <nav>2</nav> -->
+    </header>
+
+    <section class="sec1">
+        <div class="first">first</div>
+        <div class="secound"> 
+            <div class="top">top</div>
+            <div class="bottom">bottom</div>
+        </div>
+        <div class="three">
+            <div class="left">left</div>
+            <div class="right">right</div>
+        </div>
+        <div class="four">four</div>
+    </section>
+
+    <footer>
+        <div class="col-40">40%</div>
+        <div class="col-60">60%</div>
+    </footer>
+</body>
+</html>

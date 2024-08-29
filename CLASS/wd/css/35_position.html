@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        section{
+            height: 800px;
+            background-color: orange;
+            border: 2px solid red;
+            display: flex;
+            padding: 20px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+        }
+        /* static defult value not work */
+        /* #box1{
+            background-color: lightcoral;
+            position: static;
+            top: 100px;
+            left: 100px;
+        } */
+        /* #box2{
+            position: fixed;
+            top: 0;
+            bottom: 20px;
+            right: 20px;
+        } */
+         /* #box3{
+            position: sticky;
+            top: 0;
+         } */
+        /* #box4{
+            position: relative;
+            top: 150px;
+            left: 150px;
+        } */
+         #box5{
+            position: relative;
+         }
+         .box1{
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            position: absolute;
+            /* left: 0; */
+            /* right: 0; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /* bottom: 0; */
+         }
+         .box2{
+            height: 50px;
+            width: 50px;
+            background-color:lightgreen;
+            position: absolute;
+            /* top: 10px; */
+            /* left: 10px; */
+            bottom: 0;
+            right: 0;
+         }
+    </style>
+</head>
+<body>
+
+    <!-- position
+        type :- 5
+        1) static :-  defult :- value :- top,bottom,left,right (do not work)
+        2) fixed :- (body) :- value ;- top,bottm,left,right (px,%)
+        3) stciky :- (section) :- value :- top,bottm,left,right (px,%)
+        4) reletive :- (pernet) :- value :- top,bottm,left,right (px,%) :- 
+        5) abosulte :- (child) :- value top,bottm,left,right (px,%) :- raletive
+    -->
+
+    <section class="main">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">
+            <div class="box1">5</div>
+            <div class="box2">5.1</div>
+        </div>
+        <div class="box">6</div>
+    </section>
+    <section>
+
+    </section>
+    <section></section>
+</body>
+</html>
