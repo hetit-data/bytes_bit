@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: aliceblue;
+    }
+
+    table {
+      border: 1px solid transparent;
+      border-radius: 15px;
+      background-color: white;
+    }
+
+    #fname,
+    #lname,
+    #pass,
+    #cpass,
+    #gen {
+      width: 200px;
+      color: red;
+    }
+
+    button {
+      padding: 8px 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: darkgray;
+      color: white;
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+  </style>
+  <body>
+    <table cellspacing="20px" cellpadding="5px" id="table">
+      <tr>
+        <td>First Name :</td>
+        <td><input type="text" id="one" /></td>
+        <td id="fname"></td>
+      </tr>
+      <tr>
+        <td>Last Name :</td>
+        <td><input type="text" id="two" /></td>
+        <td id="lname"></td>
+      </tr>
+      <tr>
+        <td>Password :</td>
+        <td>
+          <input type="password" id="three" />
+          <input type="checkbox" onclick="passShow()" />
+        </td>
+        <td id="pass"></td>
+      </tr>
+      <tr>
+        <td>Confirm Password :</td>
+        <td><input type="password" id="four" /></td>
+        <td id="cpass"></td>
+      </tr>
+      <tr>
+        <td>Gender :</td>
+        <td>
+          <input type="radio" id="five" name="xyz" required /> MALE
+          <input type="radio" id="six" name="xyz" required /> FEMALE
+        </td>
+        <td id="gen"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <center><button onclick="submitted()">Submit</button></center>
+        </td>
+      </tr>
+    </table>
+    <h1 id="demo"></h1>
+
+    <script>
+      function submitted() {
+        let a = document.getElementById("one").value;
+        let b = document.getElementById("two").value;
+        let c = document.getElementById("three").value;
+        let d = document.getElementById("four").value;
+        let e = document.getElementById("five");
+        let f = document.getElementById("six");
+
+        if (a && b && c && d && c === d && (e.checked || f.checked)) {
+          document.getElementById("demo").innerHTML =
+            "You have successfully logged in!";
+          document.getElementById("demo").style.color = "blue";
+          document.getElementById("table").style.display = "none";
+        } else {
+          if (!a) {
+            document.getElementById("fname").innerHTML =
+              "FirstName is not entered";
+          }
+          if (!b) {
+            document.getElementById("lname").innerHTML =
+              "LastName is not entered";
+          }
+          if (!c) {
+            document.getElementById("pass").innerHTML =
+              "Password is not entered";
+          }
+          if (!d) {
+            document.getElementById("cpass").innerHTML =
+              "Password is not entered";
+          }
+          if (c !== d) {
+            document.getElementById("pass").innerHTML =
+              "Password is not proper";
+            document.getElementById("cpass").innerHTML =
+              "Password is not proper";
+          }
+          if (!e.checked && !f.checked) {
+            document.getElementById("gen").innerHTML = "Please select gender";
+          }
+        }
+      }
+
+      function passShow() {
+        if (three.type === "password") {
+          three.type = "text";
+          four.type = "text";
+        } else {
+          three.type = "password";
+          four.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>
