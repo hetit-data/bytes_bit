@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Toggle Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .password-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="password-container">
+        <input type="password" id="password" placeholder="Enter password">
+        <button id="hideBtn">Hide</button>
+        <button id="showBtn">Show</button>
+        <button id="toggleBtn">Toggle</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#hideBtn').click(function() {
+                $('#password').attr('type', 'password');
+            });
+
+            $('#showBtn').click(function() {
+                $('#password').attr('type', 'text');
+            });
+
+            $('#toggleBtn').click(function() {
+                var currentType = $('#password').attr('type');
+                if (currentType === 'password') {
+                    $('#password').attr('type', 'text');
+                } else {
+                    $('#password').attr('type', 'password');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .animated-div {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            background-color: #3498db; /* Initial background color */
+            transition: background-color 1s ease;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="animated-div"></div>
+    <button id="changeColor">Change Color</button>
+
+    <script>
+        $(document).ready(function() {
+            const colors = ['#3498db', '#e74c3c', '#2ecc71', '#f39c12', '#9b59b6']; // Array of colors
+            let currentIndex = 0;
+
+            $('#changeColor').click(function() {
+                // Increment index to get the next color
+                currentIndex = (currentIndex + 1) % colors.length;
+
+                $('*').css('background-color', colors[currentIndex]);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
