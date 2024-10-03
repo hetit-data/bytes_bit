@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1 id="h1" onmouseenter="changetext()" onmouseleave="changetext2()">Hello js</h1>
-
+<h1 id="h2" onmouseenter="changetextt()" onmouseleave="changetextt2()">hq</h1>
     <script>
         var h1_tag = document.getElementById("h1")
         console.log(h1_tag)
@@ -21,6 +21,16 @@
         function changetext2(){
             h1_tag.innerText = "Hello js";
             h1_tag.style.color = "black"
+        }
+
+        var h1=document.getElementById("h2")
+        function changetextt(){
+            h1.innerHTML="het patel";
+            h1.style.color="red";
+        }
+        function changetextt2(){
+            h1.innerHTML="heddjgd";
+            h1.style.color="green";
         }
     </script>
 

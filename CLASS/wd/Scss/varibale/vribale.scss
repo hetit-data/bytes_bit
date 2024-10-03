@@ -1,0 +1,22 @@
+$bg-color:blue;
+$color:red;
+$fontsze:50px;
+$heghit:200px;
+$widths:200px;
+
+
+h1{
+    background-color: red;
+    color: $bg-color;
+    padding: $fontsze;
+}
+h2{
+    background-color: $bg-color;
+    color: $color;
+    font-size: $fontsze;
+}
+.main{
+    height: $heghit;
+    width: $widths;
+    border:  2px solid $bg-color;
+}

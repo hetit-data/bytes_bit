@@ -14,7 +14,10 @@
         <button onclick="sum()">sum</button>
 
         <h1 id="h1"></h1>
-
+<input type="number" name="" id="n1">
+<input type="number" id="n2">
+<button onclick="sub"></button>
+<h1 id="h2"></h1>
         <script>
             var num1 = document.getElementById("num1");
             console.log(num1)
@@ -26,6 +29,14 @@
                 let sum =parseInt(num1.value) + parseInt(num2.value)
                 document.getElementById("h1").innerHTML = sum
                 // document.write(sum)
+            }
+            var n1=document.getElementById("n1");
+            var n2=document.getElementById("n2");
+            function sub(){
+                var sub=parseInt(n1.value)+parseInt(n2.value);
+                document.getElementById("h2").innerHTML=sub
+                
+
             }
 
         </script>

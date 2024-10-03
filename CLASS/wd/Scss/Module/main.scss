@@ -1,0 +1,7 @@
+@use "Header.scss";
+
+.main{
+    height: Header.$font-size * 2;
+    width: Header.$font-size + 100px;
+    border:  2px solid Header.$bg-color;
+}

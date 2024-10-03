@@ -1,0 +1,19 @@
+$bg-color:red;
+$color:blue;
+$font-size:100px;
+
+header{
+    nav{
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                background-color: $bg-color;
+                padding: 10px 20px;
+                a{
+                    color: $color;
+                }
+            }
+        }
+    }
+}

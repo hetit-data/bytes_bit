@@ -1,0 +1,17 @@
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  background-color: red;
+  padding: 10px 20px;
+}
+header nav ul li a {
+  color: blue;
+}
+
+.main {
+  height: 200px;
+  width: 200px;
+  border: 2px solid red;
+}/*# sourceMappingURL=main.css.map */
