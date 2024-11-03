@@ -1,0 +1,47 @@
+// without
+.border(){
+    border: 2px solid red;
+    padding: 20px;
+}
+
+// withpara
+.border2(@size,@color){
+    border: @size solid @color;
+    padding: 20px;
+}
+
+.flex(@contnet){
+    display: flex;
+    justify-content: @contnet;
+}
+
+
+
+h1{
+    .border()
+}
+h2{
+    .border()
+}
+
+h3{
+    .border2(10px, blue)
+}
+
+.main{
+    .flex(space-between);
+  
+    .box{
+        height: 200px;
+        width: 200px;
+        .border();
+    }
+    @media only screen and (max-width:768px) {
+        display: block;
+        .box{
+            margin: 0 auto;
+            width: 300px;
+        }
+    }
+    
+}

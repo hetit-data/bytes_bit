@@ -1,0 +1,13 @@
+%border{
+    border: 5px solid red;
+    padding: 20px;
+}
+
+
+h1{
+    @extend %border;
+    border-color: blue;
+}
+h2{
+    @extend %border;
+}

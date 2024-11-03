@@ -1,0 +1,36 @@
+{
+    "user": [
+        {
+            "id": "1",
+            "role": "admin",
+            "type": "abc"
+        },
+        {
+            "id": "2",
+            "role": "user",
+            "type": "abcd"
+        },
+        {
+            "id": "3",
+            "role": "superuser",
+            "type": "abcde"
+        }
+    ],
+    "services": [
+        {
+            "id": "101",
+            "name": "het",
+            "course": "patel"
+        },
+        {
+            "id": "201",
+            "name": "vraj",
+            "course": "patel"
+        },
+        {
+            "id": "301",
+            "name": "shubham",
+            "course": "sir"
+        }
+    ]
+}

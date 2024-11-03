@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inhritance :-  one class to onter class (pass) -->
+
+    <!-- class a {
+
+    }
+    class b extend a{
+
+    } -->
+    <!-- 1) single inhritance  :- A - B 
+    2) muliple :-  not js two prent  
+    3) mulit leve :- A - b - c 
+    4) hirchical :- A - B, A - C 
+    5) hybrid :- single and muli  -->
+
+    <script>
+        // single inhri
+        // class a{
+        //     x = function(){
+        //         console.log("X methods value ")
+        //     }
+
+        // }
+        // class b extends a{
+        //     y = function(){
+        //         console.log("Y method value")
+        //     }
+        // }
+        // const obj = new b
+        // console.log(obj)
+        // obj.y()
+        // obj.x()
+
+
+        // muli level
+        // class a{
+        //     x = function(){
+        //         console.log("X methods value ")
+        //     }
+
+        // }
+        // class b extends a{
+        //     y = function(){
+        //         console.log("Y method value")
+        //     }
+        // }
+        // class c extends b{
+        //     z = function(){
+        //         console.log("Z method value")
+        //     }
+        // }
+        // const obje = new c 
+        // console.log(obje)
+        // obje.x()
+        // obje.y()
+        // obje.z()
+
+
+        //hirchical
+        class a{
+            x = function(){
+                console.log("X methods value ")
+            }
+
+        }
+        class b extends a{
+            y = function(){
+                console.log("Y method value")
+            }
+        }
+        class c extends a{
+            c = function(){
+                console.log("C method value")
+            }
+        }
+
+        const obj = new b
+        console.log(obj)
+        obj.y()
+        obj.x()
+
+        const obj1 = new c
+        console.log(obj1)
+        obj1.x()
+        obj1.c()
+        
+    </script>
+
+
+</body>
+</html>

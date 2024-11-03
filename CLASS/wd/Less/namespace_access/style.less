@@ -1,0 +1,33 @@
+#animate(){
+    .button{
+        padding: 10px 20px;
+        background-color: lightcoral;
+        color: white;
+        transition: .5s;
+        &:hover{
+            background-color: rgb(32, 32, 32);
+        }
+    }
+    .btn1{
+        padding: 20px;
+        background-color: red;
+        color: white;
+        transition: .5s;
+        &:hover{
+            background-color: rgb(28, 224, 77)
+        }
+    }
+}
+
+.btn {
+    #animate.button();
+}
+
+.btn2{
+    #animate.button()
+}
+
+.btn3{
+    #animate.btn1();
+}
+

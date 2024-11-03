@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- method overloading (complie time) : class one function name same but deffetnt para 
+      method overring (run time) :- function name and same para defenet class -->
+      
+      <script>
+        // class a{
+        //     x = function(a,b){
+        //         console.log(a+b)
+        //         console.log("X method")
+        //     }
+        //     x = function(a,b,c){
+        //         console.log("Xy method")
+        //         console.log(a)
+        //         console.log(b)
+        //         console.log(c)
+        //     }
+        // }
+        // method js function same loading not possible in js
+        // const ob = new a
+        // ob.x(10,20,30)
+
+
+        class a{
+            display = function(){
+                console.log("X function")
+            }
+        }
+        class b extends a{
+            display = function(){
+                console.log("Y function")
+            }
+        }
+        class c extends b{
+            display = function(){
+                console.log("Z Function")
+            }
+        }
+        // method overring solution
+        const obj = [new a(),new b(),new c()]
+        // obj.display()
+        // obj.display()
+        console.log(obj)
+
+        obj.forEach((data)=>{
+            data.display()
+        })
+      </script>
+</body>
+</html>

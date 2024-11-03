@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- data hide -->
+     <!-- private data access -->
+
+    <script>
+        function Pesron(name,age){
+            // public
+            // this.ab = name;
+            // this.age1 = age 
+            
+            // private
+            let _name = name;
+            let _age = age;
+
+            // access 
+            this.getName = function(){
+                return _name
+            }
+            this.getAge = function(){
+                return _age
+            }
+            this.setAge = function(newage){
+                if(newage){
+                    return _age = newage
+                }
+                else{
+                    console.log("shh")
+                }
+            }
+
+        }
+
+        const obj = new Pesron("Het",23)
+        // console.log(obj.ab)
+        // console.log(obj)
+        console.log(obj._name)
+        console.log(obj.getName())
+        console.log(obj.getAge())
+        console.log(obj.setAge(25))
+
+        console.log(obj.getAge())
+    </script>
+</body>
+</html>

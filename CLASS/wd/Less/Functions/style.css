@@ -1,0 +1,11 @@
+h1 {
+  font-size: 20px;
+  color: red;
+  background-color: lightcoral;
+}
+h2 {
+  background: hsl(230, 50%, 60%);
+}
+h2:hover {
+  background: hsl(230, 80%, 60%);
+}

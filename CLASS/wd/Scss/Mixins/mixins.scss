@@ -1,0 +1,46 @@
+// without para defult
+@mixin border(){
+    border: 5px solid red;
+}
+
+// with parameter
+@mixin border2($size,$color){
+    padding: 20px;
+    border: $size solid $color;
+}
+
+@mixin flex($chnage,$chnag1){
+    display: flex;
+    justify-content: $chnage;
+    align-items:  $chnag1;
+}
+
+h1{
+    @include border()
+}
+h2{
+  
+    @include border();
+}
+
+h3{
+    @include border2(10px,blue)
+}
+p{
+    @include border2(5px,green);
+    border-style: dotted;
+}
+
+.main{
+    height: 600px;
+    .box{
+        height: 200px;
+        width: 200px;
+        @include border();
+        margin: 0 auto;
+    }
+    @include flex(space-between,center);
+    @media only screen and (max-width:992px) {
+        display: block;
+    }
+}

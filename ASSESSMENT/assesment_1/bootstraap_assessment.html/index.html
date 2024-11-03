@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Interval Calculation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap DateTimePicker CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!-- Bootstrap DateTimePicker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center">Date Interval Calculator</h2>
+        <form id="dateForm" class="form-inline justify-content-center">
+            <!-- Date 1 Input -->
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="date1" class="sr-only">Date 1</label>
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" id="date1" placeholder="Select Date 1" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Date 2 Input -->
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="date2" class="sr-only">Date 2</label>
+                <div class='input-group date' id='datetimepicker2'>
+                    <input type='text' class="form-control" id="date2" placeholder="Select Date 2" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-2">Calculate Interval</button>
+        </form>
+
+        <!-- Result Display -->
+        <div class="text-center">
+            <h4 id="result" class="text-success"></h4>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

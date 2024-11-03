@@ -1,0 +1,28 @@
+[
+    {
+        "id":1,
+        "name":"Het Patel",
+        "course":"Front-end"
+    },
+    {
+        "id":2,
+        "name":"bhavik Patel",
+        "course":"back-end"
+    }
+    ,{
+        "id":3,
+        "name":"Dhaval",
+        "course":"Full-stack"
+    }
+    ,{
+        
+        "id":4,
+        "name":"Varj",
+        "course":"Mern-stack"
+    },{
+        
+        "id":5,
+        "name":"Dinesh",
+        "course":"hadware"
+    }
+]

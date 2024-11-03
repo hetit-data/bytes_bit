@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [11,23,43,"sdd","54","sds",[23,43,455,4,646],32,"345",35]
+        console.log(arr)
+        console.log(arr[4])
+        console.log(arr[6][2])
+
+        // document.write(arr)
+
+        // normal for loops
+        for(i=0;i<arr.length;i++){
+            document.write("index=>",i,"value=>",arr[i],"<br>")
+        }
+
+        // Adavance js 
+        // for of
+        for(let data of arr){
+            // value
+            console.log(data)
+            document.write("for of=> ",data,"<br>")
+        }
+
+        // for in 
+        for(let data1 in arr){
+            // index
+            console.log(data1)
+            // value [index]
+            console.log(arr[data1])
+            document.write("value =>",arr[data1],"<br>")
+        }
+
+
+        // for each method 
+        arr.forEach((value,index,arrr)=>{
+            // console.log(value)
+            // console.log(index)
+            // arr represent
+            // console.log(arrr)
+            document.write(index,"value =>",value,"<br>")
+        })
+
+
+    </script>
+</body>
+</html>

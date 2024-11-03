@@ -1,0 +1,12 @@
+// + - * /
+$heghit : 200px;
+$width:200px;
+
+.main{
+    // height: $heghit + 100px;
+    // height: $heghit * 2;
+    height: $heghit - 100px;
+    // width: $width + 200px;
+    width: $width / 2;
+    border:  2px solid;
+}

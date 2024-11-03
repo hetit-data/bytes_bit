@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = {
+
+            fullname: function dispaly() {
+                return this.firtname + " " + this.lastname
+            }
+        }
+
+        let person = {
+            firtname: "Dahval",
+            lastname: "luhar"
+        }
+
+        let person2 = {
+            firtname: "Swapnil",
+            lastname: "patel"
+        }
+
+        // as object arrgument
+        let obj = data.fullname.bind(person2)
+        console.log(obj())
+    </script>
+</body>
+
+</html>

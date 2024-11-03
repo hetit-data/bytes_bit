@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Json :- javscript syntex object notation (readt data) :-no sql  rest api-->
+    <!-- light base easy use and easy read -->
+    <!-- key and value -->
+
+    <!-- javscript json (direct) :- methods (parse) and stringfiy -->
+
+    <!-- syntex json
+    let data = `[
+        {
+            'id':1,
+            "name":"Het",
+            "course":"Mern"
+        }
+    ]`
+
+    object  data
+    let data1 = [
+        {
+            id:1,
+            name:"het",
+            course:"Mern"
+        }
+    ] -->
+
+
+    <script>
+
+        let jsondata = `[
+            {
+                "id":1,
+                "name":"Het patel",
+                "course":"MERN-stack"
+            },
+            {
+                "id":2,
+                "name":"Bhavik patel",
+                "course":"Front-end"
+            },
+            {
+                "id":3,
+                "name":"Varj patel",
+                "course":"Back-end"
+            }
+        ]`
+
+        console.log(jsondata)
+        // parse :- json data and covert object/array 
+        // document.write(jsondata)
+
+        // json data array/object
+        let object1 = JSON.parse(jsondata);
+
+        console.log(object1)
+
+        // array loop 
+        object1.forEach((data) => {
+            console.log(data)
+            document.write(`<h1>ID :- ${data.id} name:- ${data.name} course :- ${data.course}</h1>`)
+        });
+
+
+        let ob = [
+            {
+                id:1,
+                name:"Bhavik patel",
+                course:"Front-end"
+            },
+            {
+                id:2,
+                name:"Het patel",
+                course:"MERN-stack"
+            },
+            {
+                id:3,
+                name:"Varj patel",
+                course:"Back-end"
+            }
+        ]
+
+        console.log(ob)
+
+        let json = JSON.stringify(ob)
+
+        console.log(json)
+        // document.write(json)
+    </script>
+
+</body>
+</html>

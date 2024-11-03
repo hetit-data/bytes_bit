@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="user()">user</button>
+    <button >Admin</button>
+
+    <table>
+        
+    </table>
+
+
+    <script>
+      function user(){
+        fetch("data1.json",{
+            method:"GET"
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data.user)
+            for(let user of data.user){
+                console.log(user)
+                document.write(`<h3>Id :- ${user.id} name :- ${user.name} email:${user.email}</h3> `)
+            }
+        })
+      }
+    </script>
+</body>
+</html>

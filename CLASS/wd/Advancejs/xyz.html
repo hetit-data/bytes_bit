@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practical - 20</title>
+<style>
+.slider-container { width: 1000px; overflow: hidden; margin: 0 auto;
+}
+
+.slider {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+min-width: 600px; text-align: center;
+}
+
+img {
+max-width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="slider-container">
+<div class="slider">
+<div class="slide"><img src="4.jpg" alt="Image 1"></div>
+<div class="slide"><img src="Ganesh.png" alt="Image 2"></div>
+<div class="slide"><img src="krishna.jpg" alt="Image 3"></div>
+<div class="slide"><img src="ahm.png" alt="Image 4"></div>
+</div>
+</div>
+<center>
+<button id="prev-btn">Previous</button>
+<button id="next-btn">Next</button>
+</center>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() { const $slider = $('.slider'); const $slides = $('.slide');
+const slideCount = $slides.length; let currentSlide = 0;
+ 
+
+
+// Initialize the first slide
+$slider.css('width', `${slideCount * 100}%`);
+$slides.css('width', `${100 / slideCount}%`);
+
+// Function to go to the next slide function nextSlide() {
+currentSlide = (currentSlide + 1) % slideCount; updateSlider();
+}
+
+// Function to go to the previous slide function prevSlide() {
+currentSlide = (currentSlide - 1 + slideCount) % slideCount; updateSlider();
+}
+
+// Function to update the slider's position function updateSlider() {
+const offset = -currentSlide * (100 / slideCount);
+$slider.css('transform', `translateX(${offset}%)`);
+}
+
+// Attach click events to next and previous buttons
+$('#next-btn').on('click', nextSlide);
+$('#prev-btn').on('click', prevSlide);
+});
+</script>
+</body>
+</html>

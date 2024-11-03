@@ -1,0 +1,14 @@
+@bg:foo;
+
+h1{
+    font-size: if((2<1),40px,20px);
+    color: if((iscolor(@bg)),black,red);
+    background-color: if((2<1),blue,lightcoral);
+}
+
+h2{
+    background: hsl(230,50%,60%);
+    &:hover{
+        background: saturate(hsl(230,50%,60%),30%);
+    }
+}

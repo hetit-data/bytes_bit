@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Abc{
+            // simir logic // state /props
+            constructor(a,b){
+                this.a = a ;
+                this.b = b;
+            }
+
+            add = function(){
+                console.log(`add = ${this.a + this.b}`)
+            }
+
+            sub = function(){
+                console.log(`sub = ${this.a - this.b}`)
+            }
+
+            mul = function(){
+                console.log(`mul = ${this.a * this.b}`)
+            }
+
+            div = function(){
+                console.log(`div = ${this.a / this.b}`)
+            }
+        }
+
+        const ab = new Abc(100,50)
+        console.log(ab)
+        ab.add()
+        ab.sub()
+        ab.mul()
+        ab.div()
+    </script>
+</body>
+</html>

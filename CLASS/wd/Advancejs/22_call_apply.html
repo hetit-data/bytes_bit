@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = {
+
+            fullname : function dispaly(city,state){
+                return this.firtname + " " + this.lastname + " " + city + " " + state
+            }
+        }
+
+        let person = {
+            firtname : "Dahval",
+            lastname : "luhar"
+        }
+
+        let  person2 = {
+            firtname : "Swapnil",
+            lastname : "patel"
+        }
+
+        // call :- sparete agrument
+        console.log(data.fullname.call(person,"surat","gujarat"))
+
+        // apply :- array agurment
+        console.log(data.fullname.apply(person2,["ahemdabad","gujarat"])) 
+    </script>
+</body>
+</html>

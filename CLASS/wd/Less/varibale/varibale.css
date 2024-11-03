@@ -1,0 +1,10 @@
+h1 {
+  background-color: red;
+  color: #e9b8b8;
+  font-size: 100px;
+  padding: 200px / 2;
+}
+h2 {
+  background-color: #e9b8b8;
+  color: red;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        fetch('data.json',{
+            method:"GET"
+        })
+        .then((res)=>{
+            // object
+            return res.json()
+        })
+        .then((res)=>{
+            console.log(res)
+            // console.log(res[1])
+            for(let data of res)
+            {
+                console.log(data)
+                document.write(`<h3>Id :- ${data.id} name :- ${data.name} course:${data.course}</h3> `)
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- constore :- function automatically / simire coman value // defult alway top -->
+     <!-- class have only one constructor -->
+
+    <script>
+        class abc {
+            x = function(){
+                console.log("x value")
+            }
+            y = function(){
+                console.log("Y value")
+            }
+            z = function(){
+                console.log("Z value")
+            }
+            // function
+            constructor(){
+                console.log("constructre data")
+            }
+            // constructor(){
+            //     console.log("top data")
+            // }
+        }
+        const ab = new abc 
+        console.log(ab)
+        ab.x()
+        ab.y()
+    </script>
+</body>
+</html>

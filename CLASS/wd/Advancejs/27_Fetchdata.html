@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fetch() :- promise  -->
+    <!-- api :- application prom lag (rest josn),graphql, -->
+
+    <script>
+
+        // console.log(fetch())
+        fetch('test.txt',{
+            // defults get
+            method:"GET"
+        })
+        // text file js
+        .then((res)=>{
+            // convrt js
+            return res.text()
+        })
+        // callback
+        .then((res)=>{
+            console.log(res)
+            document.write(res)
+        })
+    </script>
+
+</body>
+</html>

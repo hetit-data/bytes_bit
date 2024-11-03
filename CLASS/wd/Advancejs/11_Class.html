@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- class :- data mebrer(variale) and member function(function) of class :- blue print of object   -->
+
+
+    <!-- syntex ;- 
+    class classname{
+        member function(){
+            let varible
+        }
+        memeber function(){
+            let varibale
+        }
+    }
+    const name = new classname -->
+
+    <script>
+        class bank{
+           display = function x(pin,blance){
+                let bankname = "HDFC";
+                let BankIFCE = "HDFC000H";
+                let atmpin = pin;
+                let bankblance = blance;
+
+                console.log("Atm pin",atmpin)
+                console.log("Bank blance",bankblance)
+                console.log("Bank name",bankname)
+                console.log("BankIFCE",BankIFCE)
+           }
+            //    buy
+        }
+        console.log(bank)
+        const user = new bank();
+        user.display(123,20000)
+        const het = new bank();
+        het.display(233,500)
+    </script>
+</body>
+</html>

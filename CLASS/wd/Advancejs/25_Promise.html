@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- promise :- 
+            1) pending
+            2) fullfiled (completed)
+            3) reject (incomleted)
+
+    syntax :- 
+    let person = new Promise(function(res,rejc){
+        ...codition
+    }) -->
+
+    <script>
+        let person = new Promise(function(res,error){
+            // no condition pending
+
+            x = 1
+
+            if(x === 1){
+                // console.log("reslove value")
+                res("Reslove value")
+            }
+            else{
+                error("Reject value")
+            }
+        })
+
+        console.log(person)
+    </script>
+</body>
+</html>
