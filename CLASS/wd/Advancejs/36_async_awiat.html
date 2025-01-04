@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(){
+            return setTimeout(()=>{
+                console.log("3 sec delay")
+            },3000)
+        }
+        // add()
+
+        // async and await :- 
+
+        async function show(){
+            console.log("without settimeout")
+            const res= await add()
+            console.log(res)
+            console.log("with sec")
+            // console.log(res)
+        }
+        show()
+    </script>
+</body>
+</html>

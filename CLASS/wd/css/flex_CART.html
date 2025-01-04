@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic CSS Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            /* Ensures cards wrap to the next line */
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            /* Centers cards horizontally */
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0px 0px 15px 0px #D6D6D6;
+            overflow: hidden;
+            position: relative;
+            flex: 1 0 250px;
+            /* Each card takes equal width initially, but can shrink to fit */
+            max-width: 100%;
+            /* Ensures cards do not exceed their container */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-image {
+            max-width: 100%;
+            padding: 0 auto;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            /* Allows the content to expand to fill remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Ensures content is spaced evenly */
+        }
+
+        .card-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fc636b;
+        }
+
+        .card-price {
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .card-button {
+            color: #fff;
+            background-color: #2fdab8;
+            border: none;
+            width: fit-content;
+            padding: 5px 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .button-div{
+            margin: 5px auto;
+        }
+
+        .new-label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fc636b;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .del-price{
+            margin-left: 5px;
+            color: #908e8e;
+        }
+
+        .up-down {
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            visibility: hidden;
+            z-index: 2;
+        }
+        .ab{
+            justify-content: center;
+        }
+        .ab:hover .card-image {
+            transform: rotateY(180deg);
+            transition: 0.8s;
+        }
+
+        .ab:hover .up-down {
+            transform: translateY(250px);
+            transition: 0.8s ease;
+            visibility: visible;
+        }
+
+        .up-down:hover {
+            background-color: #2fdab8;
+        }
+        .card-button:hover{
+            box-shadow: 0 0 0 4px, 0 0 0 8px #2fdab8;
+            transition: 0.6s;
+        }
+    </style>
+    <title>Responsive Cards with Images and Prices</title>
+</head>
+
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="new-label">New</div>
+            <div class="ab">
+                <div class="up-down">QUICK VIEW</div>
+
+                <img class="card-image"
+                    src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                    alt="Product 1">
+            </div>
+            <div class="card-content">
+                <div class="card-title">Formal Blue Shirt</div>
+                <div class="card-price"><b>$45.99</b> <span class="del-price"><del>$69.71</del></span></div>
+                <div class="button-div"><button class="card-button">ADD TO CART</button></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="new-label">New</div>
+            <div class="ab">
+            <div class="up-down">QUICK VIEW</div>
+
+            <img class="card-image"
+                src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg"
+                alt="Product 2"></div>
+            <div class="card-content">
+                <div class="card-title">Gabi Full Sleeve Sweatshirt</div>
+                <div class="card-price"><b>$45.99</b> <span class="del-price"><del>$69.71</del></span></div>
+                <div class="button-div"><button class="card-button">ADD TO CART</button></div>
+            </div>
+        </div>
+
+        <!-- Repeat for Card 3 to Card 8 with different images and prices -->
+        <div class="card">
+            <div class="new-label">New</div>
+            <div class="ab">
+                <div class="up-down">QUICK VIEW</div>
+    
+                <img class="card-image"
+                    src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg"
+                    alt="Product 2"></div>
+            <div class="card-content">
+                <div class="card-title">Dark Blue Track Pants</div>
+                <div class="card-price"><b>$80.99</b> <span class="del-price"><del>$89.71</del></span></div>
+                <div class="button-div"><button class="card-button">ADD TO CART</button></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="new-label">New</div>
+            <div class="ab">
+                <div class="up-down">QUICK VIEW</div>
+    
+                <img class="card-image"
+                    src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg"
+                    alt="Product 2"></div>
+            <div class="card-content">
+                <div class="card-title">Round Neck Black T-Shirt</div>
+                <div class="card-price"><b>$159.99</b> <span class="del-price"><del>$190.71</del></span></div>
+                <div class="button-div"><button class="card-button">ADD TO CART</button></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="new-label">New</div>
+            <div class="ab">
+                <div class="up-down">QUICK VIEW</div>
+    
+                <img class="card-image"
+                    src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg"
+                    alt="Product 2"></div>
+            <div class="card-content">
+                <div class="card-title">Men's Black Jeans</div>
+                <div class="card-price"><b>$60.99</b> <span class="del-price"><del>$90.71</del></span></div>
+                <div class="button-div"><button class="card-button">ADD TO CART</button></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="new-label">New</div>
+            <div class="ab">
+                <div class="up-down">QUICK VIEW</div>
+    
+                <img class="card-image"
+                    src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg"
+                    alt="Product 2"></div>
+            <div class="card-content">
+                <div class="card-title">Analog Watch</div>
+                <div class="card-price"><b>$160.99</b> <span class="del-price"><del>$290.71</del></span></div>
+                <div class="button-div"><button class="card-button">ADD TO CART</button></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="new-label">New</div>
+            <div class="ab">
+                <div class="up-down">QUICK VIEW</div>
+    
+                <img class="card-image"
+                    src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg"
+                    alt="Product 2"></div>
+            <div class="card-content">
+                <div class="card-title">Reversible Belt</div>
+                <div class="card-price"><b>$30.99</b> <span class="del-price"><del>$50.71</del></span></div>
+                <div class="button-div"><button class="card-button">ADD TO CART</button></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="new-label">New</div>
+            <div class="ab">
+                <div class="up-down">QUICK VIEW</div>
+    
+                <img class="card-image"
+                    src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m8.jpg"
+                    alt="Product 2"></div>
+            <div class="card-content">
+                <div class="card-title">Party Men's Blazer</div>
+                <div class="card-price"><b>$260.99</b> <span class="del-price"><del>$390.71</del></span></div>
+                <div class="button-div"><button class="card-button">ADD TO CART</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

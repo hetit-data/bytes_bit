@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 430px;
+            width: 250px;
+            box-shadow: 0px 0px 15px 0px #D6D6D6;
+            position: relative;
+
+        }
+
+        .img {
+            background: url("https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+            width: 230px;
+            top: 0;
+            margin: 20px 10px 0px 10px;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        #new {
+            background-color: #fc636b;
+            color: white;
+            right: 0;
+            margin-left: 210px;
+            padding: 0 5px;
+
+        }
+
+        .up-down {
+            width: 230px;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            visibility: hidden;
+        }
+
+        #ab:hover .img {
+            transform: rotateY(180deg);
+            transition: 0.6s;
+        }
+
+        #ab:hover .up-down {
+            transform: translatey(220px);
+            transition: 1s;
+            visibility: visible;
+        }
+
+        .content {
+            margin-top: 250px;
+            position: absolute;
+            padding: 0 50px;
+        }
+
+        .content p {
+            word-spacing: 10px;
+            font-size: 19px;
+        }
+
+        .button:hover  button{
+            box-shadow: 0 0 0 4px, 0 0 0 8px #2fdab8;
+            transition: 0.6s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <section id="ab">
+            <span id="new">New</span>
+            <div class="img"></div>
+            <div class="up-down">QUICK VIEW</div>
+        </section>
+        <div class="content">
+            <h4 style="color: #fc636b;">Formal Blue Shirt</h4>
+            <p><b>$45.99</b> <span style="color: grey;"><del> $69.71</del></span></p>
+        </div>
+        <div class="button">
+            <button
+                style="background-color: #2fdab8;color:white;width:150px;padding: 10px 30px 10px 30px;margin-top: 350px;margin-left:35px;border: none;">
+                ADD TO CART</button>
+        </div>
+    </div>    
+</body>
+
+</html>

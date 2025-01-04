@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        async function View(){
+            // const res = await fetch("https://660d95e36ddfa2943b34c530.mockapi.io/data").then((res)=>{return res.json()}).then((res)=>{console.log(res)})
+            // console.log(res)
+            const res = await axios.get("https://660d95e36ddfa2943b34c530.mockapi.io/data")
+            console.log(res)
+            console.log(res.data)
+            res.data.map((data)=>{
+                console.log(data.id)
+            })
+        }
+        View()
+
+        
+        let person  =  {name:"prtick",Coruse:"full-stack",Contact:"877867564"}
+
+        const creted = async()=>{
+            const res = await axios.post("https://660d95e36ddfa2943b34c530.mockapi.io/data",person)
+            console.log(res.data)
+        }
+        creted()
+
+        // const remove = async()=>{
+        //     const res = await axios.delete("https://660d95e36ddfa2943b34c530.mockapi.io/data/21")
+        //     console.log(res.data)
+        // }
+        // remove()
+
+
+        // // update :- put(data) + patch(security)  =>
+        
+        // // put :- delete(get) + post 
+
+
+        let person1 = {id:22,name:"het",Course:"Front-end",city:"surat",state:"Gujarat"}
+
+        const update = async()=>{
+            const res = await axios.put(`https://660d95e36ddfa2943b34c530.mockapi.io/data/${person1.id}`,person1)
+            console.log(res.data)
+        }
+        update()
+
+
+
+    </script>
+</body>
+</html>

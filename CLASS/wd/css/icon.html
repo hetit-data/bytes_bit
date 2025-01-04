@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Rotating Social Media Icons (180° Downwards)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .icon-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      perspective: 1000px; /* Enables 3D effect */
+    }
+
+    .icon-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg);
+      transition: transform 1s ease-in-out; /* Slow transition */
+    }
+
+    .icon:hover .icon-inner {
+      transform: rotateX(180deg); /* Rotate downwards */
+    }
+
+    .icon-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #555;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      backface-visibility: hidden; /* Hides back face */
+    }
+
+    .icon-face.front {
+      background: #0077b5; /* LinkedIn */
+    }
+
+    .icon-face.back {
+      background: #4267B2; /* Facebook */
+      transform: rotateX(180deg); /* Position the back face */
+    }
+
+    .icon i {
+      font-size: 40px;
+      color: #fff;
+    }
+  </style>
+  <!-- Include Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="icon-container">
+    <!-- LinkedIn -->
+    <div class="icon">
+      <div class="icon-inner">
+        <div class="icon-face front">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="icon-face back">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Facebook -->
+    <div class="icon">
+      <div class="icon-inner">
+        <div class="icon-face front">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="icon-face back">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Twitter -->
+    <div class="icon">
+      <div class="icon-inner">
+        <div class="icon-face front" style="background: #1DA1F2;">
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div class="icon-face back" style="background: #1DA1F2;">
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
