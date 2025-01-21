@@ -1,0 +1,215 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "phone": 2932932393,
+      "password": 1234
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user@gmail.com",
+      "password": 123345,
+      "img": "https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "status": "active"
+    },
+    {
+      "id": "1737455550342",
+      "name": "",
+      "email": "",
+      "password": "",
+      "img": "",
+      "status": "active"
+    },
+    {
+      "id": "1737456291784",
+      "name": "",
+      "email": "",
+      "password": "",
+      "img": "",
+      "status": "active"
+    },
+    {
+      "id": "1737456317916",
+      "name": "HET BHAVIKKUMAR PATEL",
+      "email": "patelhetit@gmail.com",
+      "password": "2332323232323",
+      "img": "C:\\fakepath\\5329634.jpg",
+      "status": "active"
+    },
+    {
+      "id": "1737456977281",
+      "name": "",
+      "email": "",
+      "password": "",
+      "img": "",
+      "status": ""
+    }
+  ],
+  "service": [
+    {
+      "id": "1",
+      "img": "fa fa-google",
+      "title": "car rental",
+      "desc": "Here you can get car at rent at lowest price"
+    },
+    {
+      "id": "2",
+      "img": "fa fa-google",
+      "title": "car finanacing",
+      "desc": "Here you can get good finance for your car"
+    },
+    {
+      "id": "3",
+      "img": "fa fa-google",
+      "title": "car inspection",
+      "desc": "hoverly inspection"
+    },
+    {
+      "id": "function getTime() { [native code] }",
+      "title": ",gdmgd",
+      "img": "hfhfh",
+      "desc": "dg"
+    },
+    {
+      "id": "1736268696158",
+      "title": "gg",
+      "img": "ggdg",
+      "desc": "gdg"
+    },
+    {
+      "id": "1736268789832",
+      "title": "ffh",
+      "img": "hfhfh",
+      "desc": "hf"
+    },
+    {
+      "id": "1736401793004",
+      "title": "HET PATEL",
+      "img": "https://th.bing.com/th/id/OIP.ZXI_38Mg5ka5Asp3n_wcPgHaEK?w=306&h=180&c=7&r=0&o=5&pid=1.7",
+      "desc": "bfbg"
+    }
+  ],
+  "carlisting": [
+    {
+      "id": "1736527017285",
+      "title": "travel",
+      "carimg": "bb",
+      "MFG": "bb",
+      "type": "Auto",
+      "Km": "kkkkkkkkkkkkkkk",
+      "price": "0"
+    }
+  ],
+  "booking": [
+    {
+      "id": "1736506260278",
+      "FirstName": "HET",
+      "LastName": "j",
+      "Email": "hetbpatel.05@gmail.com",
+      "MobileNumber": "08128045804",
+      "PickupLocation": "1",
+      "DropLocation": "3",
+      "PickupDate": "2025-01-15",
+      "PickupTime": "20:20",
+      "SelectAdult": "3",
+      "SelectChild": "3",
+      "SpecialRequest": "f",
+      "Payment": "Paypal"
+    },
+    {
+      "id": "1736505969104",
+      "FirstName": "HET",
+      "LastName": "j",
+      "Email": "hetbpatel.05@gmail.com",
+      "MobileNumber": "08128045804",
+      "PickupLocation": "1",
+      "DropLocation": "3",
+      "PickupDate": "2025-01-25",
+      "PickupTime": "19:14",
+      "SelectAdult": "1",
+      "SelectChild": "1",
+      "SpecialRequest": "dkgfkgfnfhfhnkhn",
+      "Payment": ""
+    },
+    {
+      "id": "1736506260278",
+      "FirstName": "HET",
+      "LastName": "j",
+      "Email": "hetbpatel.05@gmail.com",
+      "MobileNumber": "08128045804",
+      "PickupLocation": "1",
+      "DropLocation": "3",
+      "PickupDate": "2025-01-15",
+      "PickupTime": "20:20",
+      "SelectAdult": "3",
+      "SelectChild": "3",
+      "SpecialRequest": "f",
+      "Payment": "Paypal"
+    },
+    {
+      "id": "1736510298793",
+      "FirstName": "HET",
+      "LastName": "j",
+      "Email": "hetbpatel.05@gmail.com",
+      "MobileNumber": "08128045804",
+      "PickupLocation": "1",
+      "DropLocation": "3",
+      "PickupDate": "",
+      "PickupTime": "",
+      "SelectAdult": "",
+      "SelectChild": "",
+      "SpecialRequest": "",
+      "Payment": ""
+    },
+    {
+      "id": "1736521688055",
+      "FirstName": "ggggg",
+      "LastName": "",
+      "Email": "",
+      "MobileNumber": "",
+      "PickupLocation": "",
+      "DropLocation": "",
+      "PickupDate": "",
+      "PickupTime": "",
+      "SelectAdult": "",
+      "SelectChild": "",
+      "SpecialRequest": "",
+      "Payment": ""
+    },
+    {
+      "id": "1736521693121",
+      "FirstName": "ggg",
+      "LastName": "",
+      "Email": "",
+      "MobileNumber": "",
+      "PickupLocation": "",
+      "DropLocation": "",
+      "PickupDate": "",
+      "PickupTime": "",
+      "SelectAdult": "",
+      "SelectChild": "",
+      "SpecialRequest": "",
+      "Payment": ""
+    },
+    {
+      "id": "1736669750748",
+      "FirstName": "HET",
+      "LastName": "PATEL",
+      "Email": "patelhetit@gmail.com",
+      "MobileNumber": "08128045805",
+      "PickupLocation": "",
+      "DropLocation": "",
+      "PickupDate": "",
+      "PickupTime": "",
+      "SelectAdult": "",
+      "SelectChild": "",
+      "SpecialRequest": "",
+      "Payment": ""
+    }
+  ]
+}
