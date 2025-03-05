@@ -8,6 +8,9 @@
     .nav-ul{
         display: none;
     }
+    /* .nav{
+        background-color: aqua;
+    } */
     .row .text-logo{
         font-size: 24px;
     }
@@ -215,6 +218,9 @@
     margin: 30px auto;
     padding: 0;
    }
+   /* .nav{
+    background-color: black;
+   } */
    .sec3 .card-h3{
     font-size: 18px;
     text-align: center;
