@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<input type="text" id="cardInput" maxlength="16" oninput="checkCard()" placeholder=" 16-digit card number">
+<img id="cardImage" style="display: none; width: 150px;">
+
+<script>
+    function checkCard() {
+        let cardInput = document.getElementById("cardInput");
+        let cardImage = document.getElementById("cardImage");
+
+  
+            let cardNumber = cardInput.value;
+            let firstFour = cardNumber.substring(0, 4);
+
+            if (firstFour === "1234") {
+                cardImage.src = "https://th.bing.com/th/id/OIP.cBUkDQH0FqhsYIUoxGVYXQHaEK?w=284&h=180&c=7&r=0&o=5&pid=1.7";
+                cardImage.style.display = "block";
+            } else if (firstFour === "2345") {
+                cardImage.src = "https://th.bing.com/th/id/OIP.fgkwCuz-ovfAcVMJP5srtwHaEK?w=319&h=180&c=7&r=0&o=5&pid=1.7";
+                cardImage.style.display = "block";
+            } else {
+                cardImage.style.display = "none";
+            }
+    }
+    </script>
+
+</body>
+</html>
