@@ -15,6 +15,8 @@ import AuthProvider from './components/context/AuthContext'
 import TodoApp from './components/TodoApp'
 import Localstorage from './components/Localstorage'
 import Jsoncontactmanage from './components/Jsoncontactmanage'
+import { ThemeProvider } from "./components/contexttoggle/ThemeContext";
+import MainComponent from "./components/contexttoggle/MainComponent";
 
 function App() {
   return (
@@ -38,6 +40,9 @@ function App() {
     <TodoApp/>
     <Localstorage/>
     <Jsoncontactmanage/>
+    <ThemeProvider>
+      <MainComponent />
+    </ThemeProvider>
     </div>
   )
 }
